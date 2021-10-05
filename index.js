@@ -3,18 +3,32 @@ const fs = require("fs");
 
 
 //Constructor Function for 
-function Developer(name, employeeID, email, number ) {
+function Manager(name, employeeID, email, number ) {
   this.name = name;
-  this.employeeID = employeeID;
+  this.iD = iD;
   this.email = email;
   this.number = number;  
 }
 
 const teamManager = new Developer("teamManager", "JavaScript");
 
-Developer.prototype.printInfo = function () {
+Manager.prototype.printInfo = function () {
     console.log(
-        `Name: ${this.name}\nID: ${this.employeeID}\nEmail: ${this.email}`
+        `Name: ${this.name}\nID: ${this.employeeID}\nEmail: ${this.email}\nOffice Number: ${this.number}`
     );
-    
+    console.log("\n---------------\n");
+};
+
+function Employees(name, iD, email, number) {
+    this.name = name;
+    this.iD = iD;
+    this.email = email;
+    this.number = number; 
 }
+
+Employees.prototype.printEmployee = function () {
+    console.log(
+        `Name: ${this.name}\nID: ${this.employeeID}\nEmail: ${this.email}\nOffice Number: ${this.number}`
+    );
+    console.log("\n---------------\n");
+};
