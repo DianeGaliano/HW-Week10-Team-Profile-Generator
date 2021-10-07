@@ -1,7 +1,17 @@
 const Employee = require("../lib/Employee");
-const Manager = require("../lib/Manager");
-const Engineer = require("../lib/Engineer");
-const Intern = require("../lib/Intern");
+
+describe("Employee class", () => {
+    describe("getRole method", () =>{
+        it("adds employees", () => {
+            const employee = new Employee("Manager", [
+               {name: `${this.name}`, id: `${this.id}`, email: `${this.email}`}
+
+            ]);
+            employee.getRole("Manager");
+            expect(employee)
+        ])
+    })
+})
 
 
 
